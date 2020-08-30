@@ -13,7 +13,7 @@ namespace CoreTest.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing cold", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Storm"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
