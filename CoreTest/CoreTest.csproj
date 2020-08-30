@@ -4,5 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-
+	<PropertyGroup>
+		<RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+	</PropertyGroup>
+	
 </Project>
