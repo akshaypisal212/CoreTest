@@ -1,0 +1,29 @@
+pipeline{
+
+   agent any
+
+   stages{
+
+      stage ("Build") {
+
+        steps {
+           echo 'checkout application'
+
+           sh nuget restore CoreTest.sln
+
+           sh msbuild CoreTest.sln
+         }
+
+       }
+
+       stage ("Download") {
+      
+          steps {
+            echo 'checkout application'
+          }
+
+        }
+
+    }
+
+}
