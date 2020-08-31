@@ -5,7 +5,7 @@ pipeline{
    
      MSBuild = "C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe"
      CONFIG = 'Release'
-     PLATFORM = 'x64'
+     PLATFORM = 'Any CPU'
    }
 
    stages{
