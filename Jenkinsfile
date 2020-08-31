@@ -15,9 +15,9 @@ pipeline{
         steps {
            echo 'Building application'
 
-           bat "NuGet.exe restore your_project.sln"
+           bat "NuGet.exe restore CoreTest.sln"
 
-           bat "\"${MSBuild}\" your_project.sln /p:Configuration=${env.CONFIG};Platform=${env.PLATFORM} /maxcpucount:%NUMBER_OF_PROCESSORS% /nodeReuse:false"
+           bat "\"${MSBuild}\" CoreTest.sln /p:Configuration=${env.CONFIG};Platform=${env.PLATFORM} /maxcpucount:%NUMBER_OF_PROCESSORS% /nodeReuse:false"
 
          }
 
